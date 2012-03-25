@@ -29,7 +29,8 @@
 }
 
 - (void)dealloc {
-	[self.locationManager release];
+//	[self.locationManager release];
+// 	This line should be deleted because autorelease is set. Invalid decrement of reference counting.
     [super dealloc];
 }
 
